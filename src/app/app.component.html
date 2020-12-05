@@ -1,0 +1,10 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Signature Pad</a>
+</nav>
+
+<ng-signature-pad
+  format="base64"
+  (done)="showImage($event)">
+</ng-signature-pad >
+
+<img [src]="signatureImage" *ngIf="signatureImage"/>
